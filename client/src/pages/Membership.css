@@ -1,0 +1,197 @@
+.membership-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.membership-header .page-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tiers */
+.tiers-section {
+  margin-bottom: 3rem;
+}
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.tier-card {
+  background-color: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.tier-highlighted {
+  border-color: var(--gold);
+  border-width: 2px;
+}
+
+.tier-badge {
+  position: absolute;
+  top: -0.7rem;
+  left: 1.5rem;
+  background-color: var(--gold);
+  color: var(--navy);
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tier-name {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.tier-price {
+  margin-bottom: 0.75rem;
+}
+
+.tier-fee {
+  font-family: 'Crimson Pro', serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.tier-period {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+.tier-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.tier-benefits {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tier-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.tier-check {
+  color: var(--success);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.tier-cta {
+  width: 100%;
+  justify-content: center;
+}
+
+/* How to Join */
+.how-to-join {
+  margin-bottom: 3rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.step-card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  position: relative;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  background-color: var(--navy);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 auto 0.75rem;
+}
+
+.step-icon-wrap {
+  color: var(--gold-text);
+  margin-bottom: 0.75rem;
+}
+
+.step-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-card p {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Eligibility */
+.eligibility-section {
+  margin-bottom: 1rem;
+}
+
+.eligibility-card {
+  background-color: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.eligibility-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.eligibility-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.eligibility-list .list-icon {
+  color: var(--success);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tiers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
