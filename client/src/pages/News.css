@@ -1,0 +1,91 @@
+.news-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.news-header .page-subtitle {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.news-card {
+  background-color: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.news-card:hover {
+  box-shadow: var(--card-shadow);
+}
+
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.news-category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.cat-health {
+  background-color: #e8f4ed;
+  color: var(--success);
+}
+
+.cat-housing {
+  background-color: var(--gold-pale);
+  color: var(--gold-text);
+}
+
+.cat-education {
+  background-color: #e3ecf9;
+  color: #1a4a8a;
+}
+
+.cat-general {
+  background-color: #f0ece6;
+  color: var(--muted);
+}
+
+.news-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.news-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.news-summary {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
