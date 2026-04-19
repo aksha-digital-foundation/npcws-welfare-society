@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: REGION-docker.pkg.dev/PROJECT_ID/npcws/client:latest
+          image: asia-south1-docker.pkg.dev/aksha-platform-prod/aksha-apps/npcws-client:v1.1
           ports:
             - containerPort: 80
           resources:

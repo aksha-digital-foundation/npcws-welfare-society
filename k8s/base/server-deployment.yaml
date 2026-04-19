@@ -18,7 +18,7 @@ spec:
       serviceAccountName: npcws-server-sa
       containers:
         - name: server
-          image: REGION-docker.pkg.dev/PROJECT_ID/npcws/server:latest
+          image: asia-south1-docker.pkg.dev/aksha-platform-prod/aksha-apps/npcws-server:v1.1
           ports:
             - containerPort: 3000
           env:
@@ -46,7 +46,7 @@ spec:
                   name: npcws-db-credentials
                   key: password
             - name: CORS_ORIGIN
-              value: "https://npcws.akshadigital.com"
+              value: "https://npcws.aksha-digital-foundation.com"
           resources:
             requests:
               cpu: 200m
@@ -72,8 +72,7 @@ spec:
           image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2
           args:
             - "--structured-logs"
-            - "--auto-iam-authn"
-            - "PROJECT_ID:asia-south1:npcws-db"
+            - "aksha-npcws-prod:asia-south1:npcws-db"
           resources:
             requests:
               cpu: 50m

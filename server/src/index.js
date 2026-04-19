@@ -13,6 +13,9 @@ const app = express()
 app.use(cors({ origin: config.corsOrigin }))
 app.use(express.json())
 
+// Root health check for GKE load balancer
+app.get('/', (_req, res) => res.json({ status: 'ok' }))
+
 // Routes
 app.use('/api', healthRoutes)
 app.use('/api/members', memberRoutes)
